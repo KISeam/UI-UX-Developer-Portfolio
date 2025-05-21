@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap");
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  --dtr-font-family-base: "Manrope", Arial, Helvetica, sans-serif;
+  --dtr-primary: #4a060d;
+  --dtr-secondary: #c86358;
+  --dtr-bg-secondary-light: #f5eae6;
+}
+
+body {
+  font-family: var(--dtr-font-family-base);
+  background-color: #fff;
+  color: #8d6267;
+}
+
+
+.dtr-about { position: relative; }
+.dtr-about__img { -webkit-transition: all .5s ease; transition: all .5s ease; -webkit-transform: scale(1); transform: scale(1); }
+.dtr-about:hover .dtr-about__img { -webkit-transform: scale(1.05); transform: scale(1.05); }
+.dtr-about__content { position: absolute; left: 0; top: 50%; }
+.dtr-about__heading { display: inline-block; margin: 0 0 0 -50px; padding: 5px 15px; -webkit-transition: all .3s ease; transition: all .3s ease; background-color: var(--dtr-bg-secondary); color: var(--dtr-text-color-on-secondary); }
+.dtr-about__subtext { display: inline-block; margin: 10px 0 0 35px; padding: 5px 15px; background-color: var(--dtr-bg-primary); color: var(--dtr-text-color-on-primary); }
+.dtr-about:hover .dtr-about__heading { margin: 0 0 0 35px; }
+.dtr-rhom-shape { display: block; position: absolute; right: -63px; bottom: 30px; }
+
+.dtr-about2 { position: relative; padding: 0 10%; font-weight: 500; color: var(--dtr-text-color-primary); }
+.dtr-about2__img { position: relative; }
+.dtr-about2__img figure { -webkit-transition: all .5s ease; transition: all .5s ease; -webkit-transform: scale(1); transform: scale(1); }
+.dtr-about2:hover figure { -webkit-transform: scale(1.05); transform: scale(1.05); }
+.dtr-about2__sign-wrap { position: absolute; bottom: -75px; right: 60px; }
+.dtr-about2__sign { font-family: "Mrs Saint Delafield", Sans-serif; font-size: 4.2em; font-weight: 400; text-transform: capitalize; line-height: 1em; letter-spacing: 1px; margin-bottom: 0; color: var(--dtr-text-color-secondary); }
+.dtr-about2__circle-text { position: absolute; top: 30px; left: -67px; }
